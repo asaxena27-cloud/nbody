@@ -45,7 +45,7 @@ public class TestPlanetConstructor {
      * variables correctly.
      */
     private static void checkPlanetConstructor() {
-        System.out.println("Checking Planet constructor...");
+        System.out.println(" Checking Planet constructor...");
 
         double xxPos = 1.0,
                 yyPos = 2.0,
