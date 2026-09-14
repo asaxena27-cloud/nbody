@@ -39,7 +39,20 @@ public class Planet {
         {
             return this.calcForceExtertedBy(otherPlanet)*(this.myXPos- otherPlanet.myXPos)/calcDistance(otherPlanet);
         }
-        public double calcF
+        public double calcForceExertedByY(Planet otherPlanet)
+        {
+            return this.calcForceExtertedBy(otherPlanet)*(this.myYPos- otherPlanet.myYPos)/calcDistance(otherPlanet);
+        }
+        public double calcNetForceExertedbyX(Planet other)
+        {
+          return Math.sqrt(Math.pow(this.calcForceExertedByX(other) - other.calcForceExertedByX(other),2));
+
+        }
+    public double calcNetForceExertedbyY(Planet other)
+        {
+            return Math.sqrt(Math.pow(this.calcForceExertedByY(other) - other.calcForceExertedByY(other),2));
+
+        }
 
 
 
